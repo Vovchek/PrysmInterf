@@ -1,4 +1,4 @@
 #!/bin/bash
 conda env create -f environment.yml
-conda activate my_notebook_env
+conda activate PrysmInterf_env
 pre-commit install
