@@ -1,0 +1,17 @@
+name: PrysmInterf_env
+channels:
+  - defaults
+dependencies:
+  - jupyter
+  - nbconvert
+  - pre-commit
+  - pip
+  - numpy
+  - scipy
+  - matplotlib
+  - opencv
+  - pip:
+    - nbstripout
+    - prysm
+    - scikit-image
+    
