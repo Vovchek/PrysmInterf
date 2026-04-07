@@ -3,7 +3,9 @@ repos:
     hooks:
       - id: strip-notebook-outputs
         name: Strip notebook outputs
-        entry: jupyter nbconvert --clear-output --inplace
-        language: system
+        entry: python -m nbconvert --clear-output --inplace
+        language: python
+        additional_dependencies:
+          - nbconvert
         files: \.ipynb$
         types: [jupyter]
